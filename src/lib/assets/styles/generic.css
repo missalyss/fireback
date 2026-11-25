@@ -1,0 +1,35 @@
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--color-black-90);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'calt';
+  /* letter-spacing: var(--tracking-normal); */
+}
+
+@media (width >=--theme(--breakpoint-md)) {
+  body {
+    font-size: var(--text-sm);
+  }
+}
+
+/* keyboard tabbing */
+*:focus-visible {
+  box-shadow:
+    0 0 0 5px var(--color-white),
+    var(--shadow-card);
+  outline-offset: 2px;
+  outline-width: 2px;
+  outline-color: var(--color-firetruck);
+  outline-style: solid;
+  border-radius: 2px;
+}
+
+/* mostly for dev */
+pre {
+  text-wrap: auto;
+}

@@ -1,0 +1,21 @@
+/* See ./lib/assets/styles/README.md for styling architecture */
+@layer settings, base, generic, elements, utilities;
+
+/* settings files needed Tailwind Theme imported to make classes and CSS variables */
+@import './lib/assets/styles/settings/breakpoints.css' layer(settings);
+@import './lib/assets/styles/settings/colors.css' layer(settings);
+@import './lib/assets/styles/settings/misc.css' layer(settings);
+@import './lib/assets/styles/settings/spacing.css' layer(settings);
+@import './lib/assets/styles/settings/typography.css' layer(settings);
+
+@import 'tailwindcss/preflight.css' layer(base);
+
+@import './lib/assets/styles/generic.css' layer(generic);
+
+@import './lib/assets/styles/elements/clickies.css' layer(elements);
+@import './lib/assets/styles/elements/misc.css' layer(elements);
+@import './lib/assets/styles/elements/wordies.css' layer(elements);
+@import './lib/assets/styles/elements/modals.css' layer(elements);
+@import './lib/assets/styles/elements/formies.css' layer(elements);
+
+@import 'tailwindcss/utilities.css' layer(utilities);
